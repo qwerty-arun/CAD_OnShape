@@ -19,3 +19,15 @@
 - Introduction to pierce option. Ex: Piercing endpoint of a line to edge of the part. But this only works if you select the edge of the part which interacts with the sketch plane.
 - Introduction to intersection sketch tool.
 - Made a Mobile Case Cover.
+## Splines
+- Are piece wise polynomials between interpolation points that maintain curvature continuity along their length.
+- Are used to create paths for sweep, loft etc.
+- Double clicking the last point on the spline to complete the spline.
+- Are dynamic, their shape can be changed after creation.
+- Spline handles have both direction and magnitude. We can use dimension for this.
+- What defines a spline fully? Magnitude and direction of end points, location with respect to origin, length of the spline, lengths between intermediate points and end points.
+- You can add more points to spline using the same tool.
+- Between the spline points, the interpolation is very smooth. At the spline points, there is G2 continuity and rate of change of curvature can change abruptly at the point.
+- Inserting photos is quite common. Keep the image in the same sketch. So that hiding and showing images is easier.
+- You can insert images on planes which are located at an offset to current sketches.
+- Only one dimension is enough to define the constraint for the image. Aspect ratio is maintained.
