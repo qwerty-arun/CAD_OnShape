@@ -31,3 +31,16 @@
 - Inserting photos is quite common. Keep the image in the same sketch. So that hiding and showing images is easier.
 - You can insert images on planes which are located at an offset to current sketches.
 - Only one dimension is enough to define the constraint for the image. Aspect ratio is maintained.
+- Exercise stuff: A symmetry constraint requires a line and two other geometries of the same type. Some of the geometry intersects itself or is degenerate.
+- Pressing `s` brings out a menu of tools you can pick from.
+- Holding shift while using the spline tool avoids unnecessary constraints.
+## Curvature 
+- The Curvature sketch constraint matches G2 continuity between two curves, making them match in position, tangency, and curvature at the point of intersection. Results in smoother transitions between the curves.
+- Automatic conincidency of two endpoints (nearest) is possible.
+## Bezier Curve
+- A Bezier curve is defined by its control polygon; segments and vertices of this polygon can be constrained with sketch constraints and dimensions.
+- Polygonal Bezier curves are parametric curves defined by their control points. A 3rd degree Bezier curve is similar to a two-point spline curve, coordinates of both curves are 3rd degree polynomials.
+- A bezier curve cannot create a closed loop.
+- Once a Bezier curve is placed, the control polygon can be modified. N control points define a Bezier curve of degree N-1. The degree can be lowered by deleting control points or elevated by adding additional control points.
+- The Bezier curve allows for a higher degree of polynomials and can be used for smoother transitions with control of tangency at the ends of the curve.
+- Here too, least amount of control points is best.
