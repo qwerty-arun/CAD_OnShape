@@ -44,3 +44,25 @@
 - Once a Bezier curve is placed, the control polygon can be modified. N control points define a Bezier curve of degree N-1. The degree can be lowered by deleting control points or elevated by adding additional control points.
 - The Bezier curve allows for a higher degree of polynomials and can be used for smoother transitions with control of tangency at the ends of the curve.
 - Here too, least amount of control points is best.
+## 3D Curves
+- 3D curves are 1-dimensional wireframe entities that are defined in 3D space, and cannot be defined in a 2D sketch plane.
+- Curves such as helices, projected curves, bridging curves, and 3D fit splines may be defined in 3D space.
+-  When defining the underlying framework of a complex part by creating curves, it is very common to need curves that are not limited to a 2D sketch plane, but are defined in 3D space, and are non-planar.
+## Projected Curves
+- A Projected curve is the intersection between two non-parallel sketches, or a projection of a selection of sketch entities, curves or edges onto a face or multiple faces.
+- Also allows curves to be projected onto faces.
+- These projected curves can later act a sweep path etc.
+## Isoparametric Curves
+- Isoparametric curves are smooth curves that run along a face or surface in the U or V direction. The Isoparametric curve feature adds selectable curve entities to the Part Studio for reference in other features.
+- Equal spacing or location of the curves can be set.
+## Offset Curves
+- Offset curve creates a new curve by offsetting the edges of surrounding faces, allowing you to create and control a profile without additional sketches or features.
+- An Offset curve may be created by selecting a single or multiple edges.
+- Offset curves may be placed on a face or used to split a face automatically.
+- Choose from two methods to calculate curve length: Geodesic or Euclidean.
+- You can't offset a curve which branches from same edge.
+- Geodesic calculates the offset using Geodesic distance in the 2D space of the target faces.
+- Euclidean calculates the offset using Euclidean distance in the 3D space.
+- Splitting faces is possible.
+- Target faces is also possible to constrain the curve to those faces.
+
