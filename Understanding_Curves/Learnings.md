@@ -65,4 +65,19 @@
 - Euclidean calculates the offset using Euclidean distance in the 3D space.
 - Splitting faces is possible.
 - Target faces is also possible to constrain the curve to those faces.
+## Exercise Part
+- Practiced drawing a handle.
+- Complex loft feature using guides.
+## Helix
+- Spiral curve in 3D space.
+- A helix is a spiral curve in 3D space that can be defined with a conical face, cylindrical face, sketch circle, or circular edge.
+- Height, pitch and rotations are three parameters.
+## Composite Curves
+- The Composite curve feature adds curves together to form a single wireframe entity. Sketch entities, edges, and other curves may be added together, as long as they share a common endpoint.
+- Please note, you may select entities that do not meet, and create multiple curves with a single feature. However, if the underlying curves overlap or cross at edges and not endpoints, the feature will fail to create the composite curve.
+- Curves that make up a composite must connect end to end and may not overlap.
+- Why is it needed? Well, if you have to delete a part of the solid but you need the boundaries, you can use composite curves.
+## Exercise : Spring
+- Mix of helix, composite curves and rest.
+- Creating a plane from a point and an adjacent line or a plane and a point.
 
