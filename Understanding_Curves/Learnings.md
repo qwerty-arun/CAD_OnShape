@@ -81,3 +81,25 @@
 - Mix of helix, composite curves and rest.
 - Creating a plane from a point and an adjacent line or a plane and a point.
 
+## Bridging Curves
+- A Bridging curve is a 2-point spline in 3D space bridging any two points or vertices together.
+- The continuity on either side of the curve may be defined to maintain the needed constraints to other geometry.
+- The shape of the curve may be refined by adjusting the magnitude and bias of the tangency or curvature, or through the use of control points.
+- In addition to a vertex or a point, bridging curves can be created from an edge. Enabling Edit edge positions allows an edge to be selected as the start or end reference. A virtual point is created along that edge at the position specified in Start edge position. The Start edge position is defined as a percentage of distance along the edge.
+- When matching tangency or curvature, there are two methods to provide finer control of the bridging curve. Using the Magnitude/bias method, a magnitude is applied to define a scaling factor for the calculation. The closer to zero, the closer the curve is to the straight line connecting the endpoints.
+- The Bias defines the weight of the tangency or curvature matching calculation between each side of the curve. A 0.5 bias equally weighs each side of the curve. The magnitude and bias may also be manipulated by dragging the associated handles in the graphics area.
+- The other method to define the shape of the bridging curve utilizes control points. When match tangent is selected, these control points control the start and end magnitude of the tangency. When match curvature is selected, the control points define not only the start and end magnitude, but also the start and end curvature offset.
+
+## 3D Fit Splines
+- A 3D fit spline fits a curvature continuous spline between selected sketch points, endpoints of other curves, vertices of parts, or a selection of tangential edges or curves. A fit spline may be used to create paths for routing, bridging entities together, paths or guides for sweep or loft features, or complex profile creation.
+- Remember to use Shift+Enter shortcut!
+## Split Curves
+- The split tool splits curves in the same way it splits parts, faces or surfaces.
+- Curves can be trimmed or split into multiple curves with the split tool.
+- Split curves are combined with other curves or sketch entities to create the final composite curve.
+- If a curve doesn't quite have the shape that you want, you can trim it. After trimming draw extended new curves and add it to a composite curve.
+## Intersection Curves
+- Intersection curve provides a robust way to create a curve or curves of the cross section where two or more surfaces or faces intersect.
+- An intersection curve can result in the creation of multiple curves depending on the selections made.
+- Intersection curve selections can be surfaces, faces, planes, or even an entire part from the parts list.
+- Make selections into groups carefully. Group 2 doesn't automatically activate.
